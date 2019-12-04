@@ -17,11 +17,11 @@ required = ("\nUse only A, B, or C\n")
 
 def intro():
   print ("After a long battle against the Dark Lord "
-  "the King Asarox kingdom has fallen and the dark age has begun  " 
-  "You got knocked out in the battle and you wake up inside  "
+  "the King Asarox kingdom has fallen and the dark age has begun. " 
+  "You got knocked out in the battle and you wake up inside "
   "a broken horse wagon with dead troops and orcs all around you, "
-  "you notice a sword next to you as you see an orc charging towards you "
-  " You will:")
+  "you notice a sword next to you as you see an orc charging towards you. "
+  "You will:")
   time.sleep(1)
   print ("""  A. Grab the sword and try to stab the orc into his stomach
   B. keep laying down in hope that the orc wont kill you
@@ -30,8 +30,8 @@ def intro():
   if choice in answer_A:
     option_sword()
   elif choice in answer_B:
-    print ("\nThe orc was faster than you. "
-    "\n\nYou got stabbed from behind and died!")
+    print ("\nThe orc gave no mercy. "
+    "\n\nYou died!")
   elif choice in answer_C:
     option_run()
   else:
@@ -40,17 +40,17 @@ def intro():
 
 def option_sword(): 
   print ("\nThe orc is wounded, but regains control. He stands up and begins "
-  "running towards you again. Will you:")
+  "running towards you with the sword stuck in his chest. Will you:")
   time.sleep(1)
-  print ("""  A. Run for your life
-  B. stab him again
+  print ("""  A. run towards the nearby ruins
+  B. fight him with your fists
   C. Run towards a nearby cave""")
   choice = input(">>> ")
   if choice in answer_A:
     option_run()
   elif choice in answer_B:
-    print ("\nYou decided to stab him again, " 
-    "the orc blocks the sword blow. And stabs you into the chest "
+    print ("\nYou decided to fight him with your bare hands, " 
+    "the orc blocks the fist throw and swings his axe towards you, cutting your head off clean. "
     "\n\nYou died!")
   elif choice in answer_C:
     option_cave()
@@ -59,7 +59,7 @@ def option_sword():
     option_sword()
 
 def option_cave():
-  print ("\nYou ran inside the cave.You notice a bow on the ground with a single arrow next to it. Will you pick up the bow? Y/N?")
+  print ("\nYou ran inside the cave. You notice a bow on the ground with a single arrow next to it. Will you pick up the bow and the arrow? Y/N?")
   choice = input(">>> ")
   if choice in yes:
     bow = 1
@@ -72,20 +72,20 @@ def option_cave():
   C. Run""")
   choice = input(">>> ")
   if choice in answer_A:
-    print ("\nHiding in the dark was not the smartest move since orcs can smell you easily. You get stabbed in the dark\n\nYou died!")
+    print ("\nHiding in the dark was not the smartest move since orcs can smell you easily. You got stabbed in the dark\n\nYou died!")
   elif choice in answer_B:
    if bow > 0:
-    print ("\nYou laid in wait. The bow in your hands "
-    "the orc, which thought you were no match. As he walked "
-    "closer and closer. As the orc "
-    "reached out to swing his axe towards you, you shot the arrow right into his heart "
-    "the orc is defeated \n\nYou survived!")
+    print ("\nYou laid in wait. The bow in your hands."
+    "The orc followed you into the cave. He started charging towards you. "
+    "You are waiting for the right moment to shoot the arrow. "
+    "When the orc finally reached out to swing his axe towards you, you shot the arrow right into his heart. "
+    "The orc drops on the ground with no signs of life left. The orc is defeated \n\nYou survived!")
    else: 
-     print ("\nYou should have picked up that bow. You're no match to the orc in a sword fight "
+     print ("\nYou should have picked up that bow. You're no match to an orc in a fist fight "
      " \n\nYou died!")
   elif choice in answer_C:
-    print ("As the orc enters the dark cave, you sliently "
-    "sneak out. You're several feet away, but the orc turns "
+    print ("As the orc enters the dark cave, you silently try to "
+    "sneak out. You're just a few meters away from the way out, but the orc turns "
     "around and sees you running.")
     option_run()
   else:
@@ -93,10 +93,10 @@ def option_cave():
     option_cave()
 
 def option_run():
-  print ("\nYou run as quickly as possible, but the orc's "
-  "speed is too great. You will:")
+  print ("\nYou run as quickly as possible, but the orc "
+  "is too fast. You will:")
   time.sleep(1)
-  print ("""  A. Hide behind boulder
+  print ("""  A. Hide behind a big rock
   B. Trapped, so you fight till the last drop of blood
   C. Run towards an abandoned town""")
   choice = input(">>> ")
@@ -120,15 +120,15 @@ def option_town():
   else:
     torch = 0
   print ("You hear its heavy footsteps and ready yourself for "
-  "the impending orc with the lid up torch in your hand.")
+  "the scary orc, ready to act.")
   time.sleep(1)
   if torch > 0:
     print ("\nYou hold the lid up torch in the hand "
-    "hoping it will stop the orc. When the orc comes in sight you swing the torch towards his leather shirt "
-    "the shirt catches fire "
+    "hoping it will stop the orc. When the orc comes in sight you swing the torch towards his leather shirt. "
+    "The shirt catches fire. "
     "\n\nThe orc burns to death. You survived")
   else: 
-     print ("\nYou kept running untill you ran out of stamina and the orc catched up on you and swang his axe towards you, cutting your head off. "
+     print ("\nYou kept running untill you ran out of stamina and the orc catched up on you and swang his axe towards you, chopping your head off clean. "
      "\n\nYou died!")
 
 intro()

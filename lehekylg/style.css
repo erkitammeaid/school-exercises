@@ -2,3 +2,22 @@ nav {
 display: flex;
 justify-content: flex-end;
 }
+.item{
+    margin: 0 5px;
+}
+@media only screen and (max-width: 475px) {
+    button {
+        display: block;
+    }
+}
+nav {
+    height: calc(100vh - 30px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.show-nav {
+    display: flex;
+}

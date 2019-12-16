@@ -1,0 +1,15 @@
+name = input("Sisestage oma nimi: ")
+print("Tervist " + name )
+living_space = str.capitalize(input("Sisestage enda elukoht: "))
+if living_space == "Saaremaa":
+    print(living_space + " on väga ilus koht")
+else:
+    print(living_space + " on hea turismi atraktsioon")
+age = input("Sisestage oma vanus: ")
+if age <"18":
+    print("Te olete liiga noor, et autot juhtida")
+elif age == "18":
+    print("Õnnitlused täisealiseks saamise puhul") 
+else:
+    print("Võite autot juhtida")
+

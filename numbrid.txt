@@ -1,0 +1,9 @@
+numbers = ["null", "uks", "kaks", "kolm", "neli", "viis", "kuus", "seitse", "kaheksa", "uheksa"]
+#print(numbers[n])
+n = 20
+if n in range(0,11):
+    print(numbers[n])    
+elif n in range(11,20):
+    print(numbers[n%10]+"teist")
+elif n in range(21,30):
+    print(numbers[n%10]+"kummend")

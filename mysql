@@ -1,0 +1,3 @@
+select sum(price) as "Aasta summa", count(*) as "Tellimuste arv"
+from orders
+left join 
